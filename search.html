@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search - Recipe Corner</title>
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+  <!-- Top Search Bar -->
+  <header class="search-navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">Recipe Corner</a>
+      <form action="search.html" method="GET" class="search-form">
+        <input type="text" name="query" placeholder="Search recipes..." required>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Recipe Cards Grid -->
+  <main class="container search-page">
+    <h2>All Recipes</h2>
+    <div class="recipe-grid">
+      
+      <!-- Card 1 -->
+      <article class="recipe-card">
+        <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast">
+        <div class="recipe-content">
+          <span class="category-tag">Breakfast</span>
+          <h3>Cheesy Egg Toast</h3>
+          <p>Crispy toast with melted cheddar and a soft egg.</p>
+          <a href="#recipe-toast" class="view-btn">View Recipe</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="recipe-card">
+        <img src="images/Lunch/lunch1.jpg" alt="Garden Salad">
+        <div class="recipe-content">
+          <span class="category-tag">Lunch</span>
+          <h3>Garden Salad</h3>
+          <p>Fresh greens, cucumbers, and tomatoes with lemon dressing.</p>
+          <a href="#recipe-salad" class="view-btn">View Recipe</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="recipe-card">
+        <img src="images/Dinner/dinner1.jpg" alt="Dinner Roast">
+        <div class="recipe-content">
+          <span class="category-tag">Dinner</span>
+          <h3>Gourmet Dinner Roast</h3>
+          <p>Tender roast with seasoned potatoes and garlic butter.</p>
+          <a href="#recipe-dinner" class="view-btn">View Recipe</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="recipe-card">
+        <img src="images/Desserts/dessert1.jpg" alt="Chocolate Lava Cake">
+        <div class="recipe-content">
+          <span class="category-tag">Dessert</span>
+          <h3>Chocolate Lava Cake</h3>
+          <p>Warm chocolate cake with a molten fudge core.</p>
+          <a href="#recipe-cake" class="view-btn">View Recipe</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ================= POPUP RECIPES (NO JS) ================= -->
+
+  <!-- Popup 1 -->
+  <div id="recipe-toast" class="recipe-modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast" class="modal-img">
+      <span class="category-tag">Breakfast</span>
+      <h2>Cheesy Egg Toast</h2>
+      <p class="recipe-meta">⏱ Prep: 5 mins | 🍳 Cook: 10 mins</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>2 slices bread</li>
+        <li>1 large egg</li>
+        <li>1/2 cup shredded cheddar cheese</li>
+        <li>1 tbsp butter, salt & pepper</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Butter bread and toast one side lightly in a pan.</li>
+        <li>Make an indent in the center, crack the egg inside, and surround with cheese.</li>
+        <li>Cover and cook on low heat for 5 minutes until egg sets.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Popup 2 -->
+  <div id="recipe-salad" class="recipe-modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <img src="images/Lunch/lunch1.jpg" alt="Garden Salad" class="modal-img">
+      <span class="category-tag">Lunch</span>
+      <h2>Garden Salad</h2>
+      <p class="recipe-meta">⏱ Prep: 10 mins | 🍳 Cook: 0 mins</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>3 cups salad greens</li>
+        <li>1/2 cup cherry tomatoes & cucumbers</li>
+        <li>2 tbsp olive oil & lemon juice</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Toss greens, tomatoes, and cucumbers in a bowl.</li>
+        <li>Drizzle with olive oil and lemon juice, then serve fresh.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Popup 3 -->
+  <div id="recipe-dinner" class="recipe-modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <img src="images/Dinner/dinner1.jpg" alt="Dinner Roast" class="modal-img">
+      <span class="category-tag">Dinner</span>
+      <h2>Gourmet Dinner Roast</h2>
+      <p class="recipe-meta">⏱ Prep: 15 mins | 🍳 Cook: 35 mins</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>500g roast protein</li>
+        <li>3 cubed potatoes & 2 carrots</li>
+        <li>Garlic and rosemary sprigs</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Toss vegetables with oil and garlic.</li>
+        <li>Roast everything at 190°C (375°F) for 35 minutes until tender.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Popup 4 -->
+  <div id="recipe-cake" class="recipe-modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <img src="images/Desserts/dessert1.jpg" alt="Chocolate Lava Cake" class="modal-img">
+      <span class="category-tag">Dessert</span>
+      <h2>Chocolate Lava Cake</h2>
+      <p class="recipe-meta">⏱ Prep: 15 mins | 🍳 Cook: 12 mins</p>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>100g dark chocolate & 50g butter</li>
+        <li>1 whole egg + 1 yolk</li>
+        <li>2 tbsp sugar & 2 tbsp flour</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Melt chocolate and butter together.</li>
+        <li>Fold in beaten eggs, sugar, and flour.</li>
+        <li>Bake at 200°C (400°F) for 10–12 minutes.</li>
+      </ol>
+    </div>
+  </div>
+
+</body>
+</html>

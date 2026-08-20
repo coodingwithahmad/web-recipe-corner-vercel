@@ -18,7 +18,7 @@ A multi-page web application dedicated to exploring everyday recipes, meal ideas
 * **Culinary Blog & Details View:** An integrated blog section (`blog.html`) and dedicated long-form article view (`blog-details.html`) for kitchen hacks and baking guides[cite: 1, 2].
 * **Responsive Layouts:** Built using CSS Grid and Flexbox with media queries for mobile, tablet, and desktop screens[cite: 1, 2].
 * **Contact Channel:** A structured contact page (`contact.html`) featuring a message form and reach-out details[cite: 1, 2].
-* **Zero External Dependencies:** Built with pure vanilla HTML5, CSS3, and JavaScript[cite: 1, 2].
+* **Zero External Dependencies:** Built with pure vanilla HTML5, CSS3 [cite: 1, 2].
 
 ---
 
@@ -26,7 +26,6 @@ A multi-page web application dedicated to exploring everyday recipes, meal ideas
 
 * **HTML5:** Semantic page structuring (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`)[cite: 1, 2].
 * **CSS3:** Custom layouts using Flexbox, CSS Grid, and media query breakpoints[cite: 1, 2].
-* **JavaScript:** Client-side array filtering for the search bar.
 
 ---
 

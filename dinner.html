@@ -6,16 +6,18 @@
     <!-- PAGE TITLE -->
     <title>Recipe Corner Food Recipes - Delicious Recipes for Every Meal</title>
     <link rel="stylesheet" href="css/dinner.css">
+    <link rel="stylesheet" href="css/site.css?v=5">
 </head>
 <header>
       <div class="container">
          <!-- LOGO -->
         <div class="logo">
-            <h1>Recipe Corner Food Recipes</h1>
+            <a href="index.html"><h1>Recipe Corner Food Recipes</h1></a>
         </div>
         <!-- NAVIGATION MENU -->
+        <input class="menu-toggle" type="checkbox" id="menu-toggle">
+        <label class="menu-icon" for="menu-toggle">&#9776;</label>
         <nav class="nav-list">
-           <div class="menu-icon">&#9776</div>
             <a href="index.html">Home</a>
             <a href="breakfast.html">Breakfast</a>
             <a href="lunch.html">Lunch</a>
@@ -44,28 +46,40 @@
             <img src="images/Dinner/dinner1.jpg" alt="Classic Steak and Fries">
            <h2>Classic Steak and Fries</h2>
             <p>End your day at twilight with this juicy grilled beef steak, perfect for a hearty and comforting dinner.</p>
-             <a href="">View Recipe</a>
+             <a href="#recipe-steak">View Recipe</a>
         </div>
         <div class="recipe-card">
             <img src="images/Dinner/dinner2.jpg" alt="Grilled Chicken Souvlaki Platter">
             <h2>Grilled Chicken Souvlaki Platter</h2>
             <p>End your day with these savory grilled chicken skewers, perfect for a hearty and comforting dinner.</p>
-             <a href="">View Recipe</a>
+             <a href="#recipe-souvlaki">View Recipe</a>
         </div>
         <div class="recipe-card">
             <img src="images/Dinner/dinner3.jpg" alt="Cheeseburger and Fries">
             <h2>Cheeseburger and Fries</h2>
             <p>End your day at twilight with this juicy classic cheeseburger, perfect for a hearty and comforting dinner.</p>
-             <a href="">View Recipe</a>
+             <a href="#recipe-burger">View Recipe</a>
         </div>
         <div class="recipe-card">
             <img src="images/Dinner/dinner4.jpg" alt="Crispy Fried Chicken">
             <h2>Crispy Fried Chicken</h2>
             <p>End your day at twilight with this golden crispy fried chicken, perfect for a hearty and comforting dinner.</p>
-             <a href="">View Recipe</a>
+             <a href="#recipe-fried-chicken">View Recipe</a>
         </div>
     </div>
     </section>
+    <div id="recipe-steak" class="recipe-modal">
+        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Dinner</p><h2>Classic Steak and Fries</h2><h3>Ingredients</h3><p>2 steaks, 3 potatoes, oil, garlic, salt and pepper.</p><h3>Method</h3><p>Season and sear the steaks in a hot pan. Cut potatoes into fries, toss with oil, and bake at 220 C until crisp. Rest the steak before serving.</p></div>
+    </div>
+    <div id="recipe-souvlaki" class="recipe-modal">
+        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Dinner</p><h2>Grilled Chicken Souvlaki Platter</h2><h3>Ingredients</h3><p>500 g chicken, olive oil, lemon juice, garlic, oregano, pita, cucumber yogurt sauce.</p><h3>Method</h3><p>Marinate the chicken with oil, lemon, garlic, and oregano. Thread onto skewers and grill until cooked through. Serve with pita and sauce.</p></div>
+    </div>
+    <div id="recipe-burger" class="recipe-modal">
+        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Dinner</p><h2>Cheeseburger and Fries</h2><h3>Ingredients</h3><p>500 g ground beef, 4 buns, cheese slices, lettuce, tomato, onion, potatoes.</p><h3>Method</h3><p>Shape and season the patties. Cook in a hot pan, add cheese, and toast the buns. Assemble with vegetables and serve with fries.</p></div>
+    </div>
+    <div id="recipe-fried-chicken" class="recipe-modal">
+        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Dinner</p><h2>Crispy Fried Chicken</h2><h3>Ingredients</h3><p>4 chicken pieces, buttermilk, flour, paprika, salt, pepper, oil.</p><h3>Method</h3><p>Soak chicken in buttermilk for 30 minutes. Coat with seasoned flour and fry until golden and cooked through. Drain before serving.</p></div>
+    </div>
     <footer>
         <div>
             <p>&copy; 2026 Recipe Corner. All rights reserved.</p>

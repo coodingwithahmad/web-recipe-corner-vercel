@@ -1,0 +1,16 @@
+@media only screen and (max-width: 557px) {
+	header { height: auto !important; min-height: 80px; padding: 12px 0; }
+	.container { width: calc(100% - 30px); }
+	.logo h1 { font-size: 20px !important; line-height: 1.2; }
+	.hero { padding: 80px 15px !important; }
+	.hero h1 { font-size: 34px !important; line-height: 1.2; }
+	.hero p { font-size: 16px !important; line-height: 1.4; }
+	.search-box { width: 100% !important; }
+	.search-box input, .search-box button { padding: 12px; }
+	.recipe-section { width: calc(100% - 30px) !important; grid-template-columns: minmax(0, 1fr) !important; }
+	.recipes { padding: 35px 0 !important; }
+	.recipes h2 { font-size: 24px !important; margin: 0 15px 22px; }
+	.recipe-card h2, .recipe-card p { margin: 15px; }
+	.recipe-card p { font-size: 16px; line-height: 1.45; }
+	footer p { padding: 0 15px; text-align: center; }
+}

@@ -162,6 +162,31 @@ body {
   position: relative;
 }
 
+@media only screen and (max-width: 557px) {
+  .container {
+    padding: 0 15px;
+  }
+  .nav-content {
+    align-items: stretch;
+  }
+  .search-form {
+    width: 100%;
+  }
+  .search-form input {
+    min-width: 0;
+    flex: 1;
+  }
+  .search-page {
+    padding: 25px 15px;
+  }
+  .recipe-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .modal-content {
+    padding: 20px 15px;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: 10px;

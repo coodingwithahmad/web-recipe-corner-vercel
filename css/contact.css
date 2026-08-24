@@ -170,6 +170,10 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .container,
+    .contact-container {
+        width: calc(100% - 30px);
+    }
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -181,5 +185,9 @@ footer {
     }
     .hero {
         padding: 50px 10px;
+    }
+    footer p {
+        padding: 0 15px;
+        text-align: center;
     }
 }

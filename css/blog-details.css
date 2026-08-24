@@ -170,13 +170,25 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    .container,
+    .article-container {
+        width: calc(100% - 30px);
+    }
     .article-header h1 {
         font-size: 26px;
+        overflow-wrap: anywhere;
     }
     .featured-image {
         height: 240px;
     }
     .article-content {
         font-size: 15px;
+    }
+    .article-content blockquote {
+        padding: 15px;
+    }
+    footer p {
+        padding: 0 15px;
+        text-align: center;
     }
 }

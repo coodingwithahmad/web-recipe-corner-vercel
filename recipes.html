@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Recipes | Recipe Corner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-mark">RC</div>
+        <a href="index.html" class="logo-text">Recipes Corner</a>
+      </div>
+      <input class="mobile-menu-toggle" type="checkbox" id="mobile-menu">
+      <label class="mobile-menu-button" for="mobile-menu"><span>Menu</span></label>
+      <div class="nav-group">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">All Recipes</a>
+          <a href="categories.html">Categories</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="shopping-list.html">Shopping List</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="sub-nav" aria-label="Category navigation">
+          <a href="breakfast.html">Breakfast</a>
+          <a href="lunch.html">Lunch</a>
+          <a href="dinner.html">Dinner</a>
+          <a href="desserts.html">Desserts</a>
+          <a href="quick-easy.html">Quick &amp; Easy</a>
+          <a href="healthy-diet.html">Healthy Diet</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(20,20,18,0.65), rgba(20,20,18,0.3)), url('images/hero-banner.jpeg.jpeg');">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag">Recipe archive</span>
+          <h1>Browse every favorite.</h1>
+          <p>Find your next meal idea by category, mood, or freshness level.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-row">
+          <a class="pill active" href="recipes.html">All</a>
+          <a class="pill" href="breakfast.html">Breakfast</a>
+          <a class="pill" href="lunch.html">Lunch</a>
+          <a class="pill" href="dinner.html">Dinner</a>
+          <a class="pill" href="desserts.html">Desserts</a>
+          <a class="pill" href="healthy-diet.html">Healthy</a>
+        </div>
+
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★☆</span></div>
+              <h3>Cheesy Egg Toast</h3>
+              <p>Easy and comforting with a soft egg and crispy bread.</p>
+              <div class="meta-row"><span class="difficulty easy">Easy</span><span class="time-tag">15 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/BreakFasts/pancakes.jpeg" alt="Fluffy Pancakes">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★★</span></div>
+              <h3>Fluffy Pancakes</h3>
+              <p>Light, golden, and perfect for a weekend brunch table.</p>
+              <div class="meta-row"><span class="difficulty easy">Easy</span><span class="time-tag">20 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch1.jpg" alt="Grilled Cheese and Salad">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★☆</span></div>
+              <h3>Grilled Cheese &amp; Salad</h3>
+              <p>Warm grilled cheese with crisp greens and a lemon finish.</p>
+              <div class="meta-row"><span class="difficulty easy">Easy</span><span class="time-tag">25 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch2.jpg" alt="Mini Sandwiches">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★★</span></div>
+              <h3>Mini Sandwiches</h3>
+              <p>Colorful, simple, and great for quick snacky lunches.</p>
+              <div class="meta-row"><span class="difficulty easy">Easy</span><span class="time-tag">18 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Dinner/dinner1.jpg" alt="Classic Steak and Fries">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Dinner</span><span class="rating">★★★★★</span></div>
+              <h3>Classic Steak &amp; Fries</h3>
+              <p>Hearty and savory with a restaurant-style finish.</p>
+              <div class="meta-row"><span class="difficulty medium">Medium</span><span class="time-tag">35 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Dinner/dinner3.jpg" alt="Cheeseburger and Fries">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Dinner</span><span class="rating">★★★★☆</span></div>
+              <h3>Cheeseburger Night</h3>
+              <p>Classic comfort food with golden fries and fresh toppings.</p>
+              <div class="meta-row"><span class="difficulty easy">Easy</span><span class="time-tag">30 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Desserts/dessert2.jpg" alt="Chocolate Fudge Cupcake">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Dessert</span><span class="rating">★★★★☆</span></div>
+              <h3>Chocolate Fudge Cupcake</h3>
+              <p>Rich, soft, and perfect for a sweet treat after dinner.</p>
+              <div class="meta-row"><span class="difficulty medium">Medium</span><span class="time-tag">28 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Desserts/dessert4.jpg" alt="Glazed Chocolate Donuts">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Dessert</span><span class="rating">★★★★☆</span></div>
+              <h3>Glazed Chocolate Donuts</h3>
+              <p>Sweet and glossy with a soft center and a rich finish.</p>
+              <div class="meta-row"><span class="difficulty medium">Medium</span><span class="time-tag">40 min</span></div>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination" aria-label="Pagination">
+          <a class="active" href="recipes.html">1</a>
+          <a href="recipes.html">2</a>
+          <a href="recipes.html">3</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Recipe Corner Food Recipes.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

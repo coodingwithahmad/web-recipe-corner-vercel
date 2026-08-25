@@ -1,72 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- PAGE TITLE -->
-    <title>Recipe Corner Food Recipes - Delicious Recipes for Every Meal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/site.css?v=5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Corner Food Recipes</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-      <div class="container">
-         <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html"><h1>Recipe Corner Food Recipes</h1></a>
-        </div>
-        <!-- NAVIGATION MENU -->
-        <input class="menu-toggle" type="checkbox" id="menu-toggle">
-        <label class="menu-icon" for="menu-toggle">&#9776;</label>
-        <nav class="nav-list">
-            <a href="index.html">Home</a>
-            <a href="breakfast.html">Breakfast</a>
-            <a href="lunch.html">Lunch</a>
-            <a href="dinner.html">Dinner</a>
-            <a href="desserts.html">Desserts</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-    <section class="hero">
-    <div class="hero-section">
-        <h2>Welcome to Recipe Corner</h2>
-        <p>Your go-to destination for delicious recipes for every meal.</p>
-    </div>
-    </section>
-     <section class="recipes">
-    <h2>Delicious Food Recipes</h2>
-    <div class="recipe-section">
-        <div class="recipe-card">
-            <img src="images/BreakFasts/pancakes.jpeg" alt="Breakfast Recipes">
-            <h2>Breakfast Recipes</h2>
-            <p>Start your day with these delicious breakfast recipes, perfect for any time of the day.</p>
-             <a href="breakfast.html">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Lunch/lunch1.jpg" alt="Lunch Recipes">
-            <h2>Lunch Recipes</h2>
-            <p>Start your day with these delicious lunch recipes, perfect for a quick and satisfying meal.</p>
-             <a href="lunch.html">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Dinner/dinner1.jpg" alt="Dinner Recipes">
-            <h2>Dinner Recipes</h2>
-            <p>Start your day with this delicious dinner recipe, perfect for a hearty and satisfying meal.</p>
-             <a href="dinner.html">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Desserts/dessert1.jpg" alt="Dessert Recipes">
-            <h2>Dessert Recipes</h2>
-            <p>Start your day with these delicious dessert recipes, perfect for a sweet ending to any meal.</p>
-             <a href="desserts.html">View Recipe</a>
-        </div>
-    </div>
-    </section>
-     <footer>
-        <div>
-            <p>&copy; 2026 Recipe Corner Food Recipes. All rights reserved.</p>
-        </div>
-    </footer>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-mark">RC</div>
+        <a href="index.html" class="logo-text">Recipes Corner</a>
+      </div>
+      <input class="mobile-menu-toggle" type="checkbox" id="mobile-menu">
+      <label class="mobile-menu-button" for="mobile-menu"><span>Menu</span></label>
+      <div class="nav-group">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">All Recipes</a>
+          <a href="categories.html">Categories</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="shopping-list.html">Shopping List</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="sub-nav" aria-label="Category navigation">
+          <a href="breakfast.html">Breakfast</a>
+          <a href="lunch.html">Lunch</a>
+          <a href="dinner.html">Dinner</a>
+          <a href="desserts.html">Desserts</a>
+          <a href="quick-easy.html">Quick &amp; Easy</a>
+          <a href="healthy-diet.html">Healthy Diet</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(20,21,22,0.72), rgba(20,21,22,0.28)), url('images/hero-banner.jpeg.jpeg');">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag">Fresh everyday inspiration</span>
+          <h1>Cook brighter meals at home.</h1>
+          <p>From cozy breakfasts to crowd-pleasing dinners, discover recipes that bring flavor, ease, and joy to your kitchen.</p>
+          <div class="pill-row">
+            <a class="btn btn-primary" href="recipes.html">Browse Recipes</a>
+            <a class="btn btn-secondary" href="submit-recipe.html">Share a Recipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quick categories</h2>
+          <span class="section-tag">Choose a mood</span>
+        </div>
+        <div class="pill-row">
+          <a class="pill active" href="breakfast.html">Breakfast</a>
+          <a class="pill" href="lunch.html">Lunch</a>
+          <a class="pill" href="dinner.html">Dinner</a>
+          <a class="pill" href="desserts.html">Desserts</a>
+          <a class="pill" href="healthy-diet.html">Healthy</a>
+          <a class="pill" href="quick-easy.html">Fast</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Recipe of the day</h2>
+          <span class="section-tag">Featured pick</span>
+        </div>
+        <div class="featured-wrap">
+          <div class="featured-image">
+            <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast">
+          </div>
+          <div class="featured-card featured-text">
+            <span class="eyebrow">Breakfast favorite</span>
+            <h3>Cheesy Egg Toast</h3>
+            <div class="meta-row">
+              <span>⏱ 15 min</span>
+              <span>🍽 2 servings</span>
+              <span>⭐ 4.8 rating</span>
+            </div>
+            <p>Crispy toast, soft egg, and melted cheddar combine into a cozy, protein-packed breakfast that feels indulgent but comes together in minutes.</p>
+            <a class="btn btn-primary" href="recipe-detail.html">View recipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Trending recipes</h2>
+          <a class="section-tag" href="recipes.html">See all</a>
+        </div>
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch2.jpg" alt="Mini Sandwiches">
+            <div class="recipe-body">
+              <div class="recipe-meta">
+                <span class="category-tag">Lunch</span>
+                <span class="rating">★★★★☆</span>
+              </div>
+              <h3>Mini Sandwiches</h3>
+              <p>Fresh, colorful, and perfect for easy lunches or sharing.</p>
+              <a class="btn btn-secondary" href="lunch.html">Open meal</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Dinner/dinner3.jpg" alt="Cheeseburger and Fries">
+            <div class="recipe-body">
+              <div class="recipe-meta">
+                <span class="category-tag">Dinner</span>
+                <span class="rating">★★★★★</span>
+              </div>
+              <h3>Cheeseburger Night</h3>
+              <p>Classic comfort food with golden fries and simple prep.</p>
+              <a class="btn btn-secondary" href="dinner.html">Open meal</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Desserts/dessert2.jpg" alt="Chocolate Fudge Cupcake">
+            <div class="recipe-body">
+              <div class="recipe-meta">
+                <span class="category-tag">Dessert</span>
+                <span class="rating">★★★★☆</span>
+              </div>
+              <h3>Chocolate Fudge Cupcake</h3>
+              <p>Soft and rich with a deep cocoa finish and silky frosting.</p>
+              <a class="btn btn-secondary" href="desserts.html">Open dessert</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/BreakFasts/pancakes.jpeg" alt="Fluffy Pancakes">
+            <div class="recipe-body">
+              <div class="recipe-meta">
+                <span class="category-tag">Breakfast</span>
+                <span class="rating">★★★★★</span>
+              </div>
+              <h3>Fluffy Pancakes</h3>
+              <p>Light, golden, and ready for berries, syrup, or yogurt.</p>
+              <a class="btn btn-secondary" href="breakfast.html">Open meal</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="newsletter">
+          <div>
+            <h3>Join the Recipe Corner newsletter</h3>
+            <p>Fresh ideas, family favorites, and kitchen tips every week.</p>
+          </div>
+          <form class="newsletter-form" action="#" method="post">
+            <input type="email" name="email" placeholder="Your email address" aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Recipe Corner Food Recipes.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
+

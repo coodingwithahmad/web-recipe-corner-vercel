@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Recipe Corner Food Recipes</title>
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/site.css?v=5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Recipe Corner</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <!-- LOGO -->
-            <div class="logo">
-                <a href="index.html"><h1>Recipe Corner Food Recipes</h1></a>
-            </div>
-            <!-- NAVIGATION MENU -->
-                <input class="menu-toggle" type="checkbox" id="menu-toggle">
-                <label class="menu-icon" for="menu-toggle">&#9776;</label>
-                <nav class="nav-list">
-                <a href="index.html">Home</a>
-                <a href="breakfast.html">Breakfast</a>
-                <a href="lunch.html">Lunch</a>
-                <a href="dinner.html">Dinner</a>
-                <a href="desserts.html">Desserts</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-mark">RC</div>
+        <a href="index.html" class="logo-text">Recipes Corner</a>
+      </div>
+      <input class="mobile-menu-toggle" type="checkbox" id="mobile-menu">
+      <label class="mobile-menu-button" for="mobile-menu"><span>Menu</span></label>
+      <div class="nav-group">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">All Recipes</a>
+          <a href="categories.html">Categories</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="shopping-list.html">Shopping List</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="sub-nav" aria-label="Category navigation">
+          <a href="breakfast.html">Breakfast</a>
+          <a href="lunch.html">Lunch</a>
+          <a href="dinner.html">Dinner</a>
+          <a href="desserts.html">Desserts</a>
+          <a href="quick-easy.html">Quick &amp; Easy</a>
+          <a href="healthy-diet.html">Healthy Diet</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="hero-section">
-            <h1>Contact Us</h1>
-            <p>Have questions, feedback, or recipe suggestions? We would love to hear from you.</p>
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(18,22,26,0.7), rgba(18,22,26,0.24)), url('images/hero-banner.jpeg.jpeg');">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag">We’d love to hear from you</span>
+          <h1>Contact us.</h1>
+          <p>Ask a question, share feedback, or send us your favorite recipe idea.</p>
         </div>
+      </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-container">
-        <div class="contact-grid">
-            
-            <!-- CONTACT INFO -->
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <p>Feel free to reach out to us using the contact form or through our details below. We reply to all inquiries within 24 hours.</p>
-                
-                <div class="info-item">
-                    <strong>Email:</strong>
-                    <p>ahmadtufailjamani@gmail.com</p>
-                </div>
-                
-                <div class="info-item">
-                    <strong>Phone:</strong>
-                    <p>+92 335 1234 777</p>
-                </div>
-
-                <div class="info-item">
-                    <strong>Address:</strong>
-                    <p>Street No.3, Boosan-Road, Multan</p>
-                </div>
+    <section class="section">
+      <div class="container detail-layout">
+        <div class="form-card">
+          <h2>Send a message</h2>
+          <form action="#" method="post">
+            <div class="form-grid">
+              <div>
+                <label for="name">Name</label>
+                <input class="form-field" id="name" type="text" name="name" placeholder="Your name">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input class="form-field" id="email" type="email" name="email" placeholder="Your email address">
+              </div>
+              <div class="full">
+                <label for="subject">Subject</label>
+                <input class="form-field" id="subject" type="text" name="subject" placeholder="How can we help?">
+              </div>
+              <div class="full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+              </div>
+              <div class="full">
+                <button class="submit-button" type="submit">Send message</button>
+              </div>
             </div>
-
-            <!-- CONTACT FORM -->
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-
+          </form>
         </div>
+
+        <aside class="detail-card">
+          <h2>Contact info</h2>
+          <p><strong>Email:</strong> hello@recipecorner.com</p>
+          <p><strong>Phone:</strong> +92 335 1234 777</p>
+          <p><strong>Address:</strong> Street No.3, Boosan Road, Multan</p>
+          <p><strong>Hours:</strong> Monday to Saturday, 9:00 AM - 5:00 PM</p>
+        </aside>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <div>
-            <p>&copy; 2026 Recipe Corner. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Recipe Corner Food Recipes.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- PAGE TITLE -->
-    <title>Recipe Corner Food Recipes - Delicious Recipes for Every Meal</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/site.css?v=5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Recipes | Recipe Corner</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-      <div class="container">
-         <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html"><h1>Recipe </h1></a>
-        </div>
-        <!-- NAVIGATION MENU -->
-        <input class="menu-toggle" type="checkbox" id="menu-toggle">
-        <label class="menu-icon" for="menu-toggle">&#9776;</label>
-        <nav class="nav-list">
-            <a href="index.html">Home</a>
-            <a href="breakfast.html">Breakfast</a>
-            <a href="lunch.html">Lunch</a>
-            <a href="dinner.html">Dinner</a>
-            <a href="desserts.html">Desserts</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-    <section class="hero">
-    <div class="hero-section">
-        <h1>Breakfast Recipies</h1>
-        <p>Your go-to destination for delicious recipes for Breakfast.</p>
-        <form action="#" class="search-box">
-            <input type="text" placeholder="Search for Breakfast recipes...">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-    </section>
-    <!-- Breakfast Recipes -->
-    <section class="recipes">
-    <h2>Delicious Breakfast Recipes</h2>
-    <div class="recipe-section">
-        <div class="recipe-card">
-            <img src="images/BreakFasts/pancakes.jpeg" alt="Pancakes">
-            <h2>Fluffy Pancakes</h2>
-            <p>Start your day with these light and fluffy pancakes, perfect with syrup and fresh fruit.</p>
-             <a href="#recipe-pancakes">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/BreakFasts/chocolate-fruit-waffles.jpg" alt="Choco-fruit Waffles">
-            <h2>Choco-Fruit Waffles</h2>
-            <p>Start your day with these delicious chocolate fruit waffles, perfect for a sweet start to your morning.</p>
-             <a href="#recipe-waffles">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast">
-            <h2>Cheesy Egg Toast</h2>
-            <p>Start your day with this delicious cheesy egg toast, perfect for a hearty breakfast.</p>
-             <a href="#recipe-toast">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/BreakFasts/hashbrowns.jpg" alt="HashBrowns">
-            <h2>Hash Browns</h2>
-            <p>Start your day with these crispy and golden hash browns, perfect for a satisfying breakfast .</p>
-             <a href="#recipe-hash-browns">View Recipe</a>
-        </div>
-    </div>
-    </section>
-    <div id="recipe-pancakes" class="recipe-modal">
-        <div class="recipe-modal-content">
-            <a class="recipe-close" href="#" aria-label="Close recipe">&times;</a>
-            <p>Breakfast</p><h2>Fluffy Pancakes</h2>
-            <h3>Ingredients</h3><p>2 cups flour, 2 eggs, 1 1/2 cups milk, 2 tbsp sugar, 2 tsp baking powder, butter.</p>
-            <h3>Method</h3><p>Whisk the dry ingredients. Stir in the eggs and milk until just combined. Cook portions on a buttered hot pan until golden. Serve with syrup and fruit.</p>
-        </div>
-    </div>
-    <div id="recipe-waffles" class="recipe-modal">
-        <div class="recipe-modal-content">
-            <a class="recipe-close" href="#" aria-label="Close recipe">&times;</a>
-            <p>Breakfast</p><h2>Choco-Fruit Waffles</h2>
-            <h3>Ingredients</h3><p>2 cups flour, 2 tbsp cocoa powder, 2 eggs, 1 3/4 cups milk, 1/3 cup sugar, berries.</p>
-            <h3>Method</h3><p>Mix the dry ingredients, then whisk in the eggs and milk. Cook in a hot waffle iron until crisp. Top with fruit and chocolate sauce.</p>
-        </div>
-    </div>
-    <div id="recipe-toast" class="recipe-modal">
-        <div class="recipe-modal-content">
-            <a class="recipe-close" href="#" aria-label="Close recipe">&times;</a>
-            <p>Breakfast</p><h2>Cheesy Egg Toast</h2>
-            <h3>Ingredients</h3><p>2 slices bread, 1 egg, 1/2 cup shredded cheddar, 1 tbsp butter, salt and pepper.</p>
-            <h3>Method</h3><p>Butter and toast the bread in a pan. Add the egg and cheese, cover, and cook until set and melted. Season and serve.</p>
-        </div>
-    </div>
-    <div id="recipe-hash-browns" class="recipe-modal">
-        <div class="recipe-modal-content">
-            <a class="recipe-close" href="#" aria-label="Close recipe">&times;</a>
-            <p>Breakfast</p><h2>Hash Browns</h2>
-            <h3>Ingredients</h3><p>2 potatoes, 2 tbsp oil, 1/2 tsp salt, black pepper.</p>
-            <h3>Method</h3><p>Grate and squeeze the potatoes dry. Season and press into hot oil. Cook for 5 to 7 minutes per side until crisp and golden.</p>
-        </div>
-    </div>
-    <footer>
-        <div>
-            <p>&copy; 2026 Recipe Corner. All rights reserved.</p>
-        </div>
-    </footer>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-mark">RC</div>
+        <a href="index.html" class="logo-text">Recipes Corner</a>
+      </div>
+      <input class="mobile-menu-toggle" type="checkbox" id="mobile-menu">
+      <label class="mobile-menu-button" for="mobile-menu"><span>Menu</span></label>
+      <div class="nav-group">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">All Recipes</a>
+          <a href="categories.html">Categories</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="shopping-list.html">Shopping List</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="sub-nav" aria-label="Category navigation">
+          <a href="breakfast.html">Breakfast</a>
+          <a href="lunch.html">Lunch</a>
+          <a href="dinner.html">Dinner</a>
+          <a href="desserts.html">Desserts</a>
+          <a href="quick-easy.html">Quick &amp; Easy</a>
+          <a href="healthy-diet.html">Healthy Diet</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(28,24,20,0.65), rgba(28,24,20,0.25)), url('images/BreakFasts/breakfast-banner.jpeg.jpeg');">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag">Bright mornings</span>
+          <h1>Breakfast favorites</h1>
+          <p>Sweet, savory, and simple recipes that turn an ordinary morning into a satisfying start.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <img src="images/BreakFasts/pancakes.jpeg" alt="Fluffy Pancakes">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★★</span></div>
+              <h3>Fluffy Pancakes</h3>
+              <p>Golden and light, perfect with fruit, yogurt, or maple syrup.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/BreakFasts/chocolate-fruit-waffles.jpg" alt="Chocolate Fruit Waffles">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★☆</span></div>
+              <h3>Chocolate Fruit Waffles</h3>
+              <p>Crispy waffle bites topped with fruit and a drizzle of chocolate.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/BreakFasts/cheesy-egg-toast.jpg" alt="Cheesy Egg Toast">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★★</span></div>
+              <h3>Cheesy Egg Toast</h3>
+              <p>Warm toast, a soft egg, and gooey cheddar in one quick bite.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/BreakFasts/hashbrowns.jpg" alt="Hashbrowns">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Breakfast</span><span class="rating">★★★★☆</span></div>
+              <h3>Golden Hash Browns</h3>
+              <p>Crisp, savory, and satisfying with eggs or avocado.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Recipe Corner Food Recipes.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
+

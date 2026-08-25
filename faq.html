@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Recipe Corner</title>
+  <title>FAQ | Recipe Corner</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,28 +38,38 @@
   </header>
 
   <main>
-    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(20,20,20,0.72), rgba(20,20,20,0.26)), url('images/hero-banner.jpeg.jpeg');">
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(18,18,18,0.7), rgba(18,18,18,0.26)), url('images/hero-banner.jpeg.jpeg');">
       <div class="container">
         <div class="hero-inner">
-          <span class="section-tag">Kitchen journal</span>
-          <h1>Our blog.</h1>
-          <p>Helpful stories, practical cooking advice, and easy inspiration from the kitchen.</p>
+          <span class="section-tag">Helpful answers</span>
+          <h1>Frequently asked questions.</h1>
+          <p>Everything you need to know about recipes, planning, ingredients, and kitchen basics.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="recipe-grid">
-          <article class="recipe-card">
-            <img src="images/BreakFasts/pancakes.jpeg" alt="Kitchen hacks">
-            <div class="recipe-body">
-              <div class="recipe-meta"><span class="category-tag">Cooking Tips</span></div>
-              <h3>10 essential kitchen hacks</h3>
-              <p>Simple ways to save time, improve flavor, and feel more confident cooking at home.</p>
-              <a class="btn btn-secondary" href="blog-details.html">Read more</a>
-            </div>
-          </article>
+        <div class="accordion">
+          <details open>
+            <summary>Do your recipes work for beginners?</summary>
+            <p>Yes. We write in a simple, straightforward way and focus on easy-to-follow steps with common ingredients.</p>
+          </details>
+
+          <details>
+            <summary>Can I save recipes for later?</summary>
+            <p>Absolutely. You can bookmark the pages in your browser or use the planner section to organize your weekly meals.</p>
+          </details>
+
+          <details>
+            <summary>Are there vegetarian or healthy options?</summary>
+            <p>Yes. The site includes healthy-diet recipes, plus lighter and vegetarian-friendly ideas across multiple categories.</p>
+          </details>
+
+          <details>
+            <summary>Can I submit my own recipe?</summary>
+            <p>Yes. Use the recipe submission page and share your favorite dish with the Recipe Corner community.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -70,8 +80,8 @@
       <p>© 2026 Recipe Corner Food Recipes.</p>
       <div class="footer-links">
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
       </div>
     </div>
   </footer>

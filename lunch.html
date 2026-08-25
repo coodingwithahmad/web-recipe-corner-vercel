@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- PAGE TITLE -->
-    <title>Recipe Corner Food Recipes - Delicious Recipes for Every Meal</title>
-    <link rel="stylesheet" href="css/lunch.css">
-    <link rel="stylesheet" href="css/site.css?v=5">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Recipes | Recipe Corner</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-      <div class="container">
-         <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html"><h1>Recipe Corner Food Recipes</h1></a>
-        </div>
-        <!-- NAVIGATION MENU -->
-        <input class="menu-toggle" type="checkbox" id="menu-toggle">
-        <label class="menu-icon" for="menu-toggle">&#9776;</label>
-        <nav class="nav-list">
-            <a href="index.html">Home</a>
-            <a href="breakfast.html">Breakfast</a>
-            <a href="lunch.html">Lunch</a>
-            <a href="dinner.html">Dinner</a>
-            <a href="desserts.html">Desserts</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-    <section class="hero">
-    <div class="hero-section">
-        <h1>Lunch Recipies</h1>
-        <p>Your go-to destination for delicious recipes for Lunch.</p>
-        <form action="#" class="search-box">
-            <input type="text" placeholder="Search for Lunch recipes...">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-    </section>
-    <!-- Lunch Recipes -->
-    <section class="recipes">
-    <h2>Delicious Lunch Recipes</h2>
-    <div class="recipe-section">
-        <div class="recipe-card">
-            <img src="images/Lunch/lunch1.jpg" alt="Grilled Cheese Salad">
-            <h2>Grilled Cheese Salad</h2>
-            <p>Treat your tastebuds at midday with this comforting gooey grilled cheese, perfect for a warm and satisfying lunch.</p>
-             <a href="#recipe-grilled-cheese">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Lunch/lunch2.jpg" alt="Mini Sandwiches">
-            <h2>Mini Sandwiches</h2>
-            <p>Satisfy your hunger at midday with these vibrant club sandwich bites, perfect for a fresh and shareable lunch.</p>
-             <a href="#recipe-sandwiches">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Lunch/lunch3.jpg" alt="Creamy Pasta Salad">
-            <h2>Creamy Pasta Salad</h2>
-            <p>Refresh your midday routine with this colorful creamy pasta salad, perfect for a cool and satisfying lunch.</p>
-             <a href="#recipe-pasta-salad">View Recipe</a>
-        </div>
-        <div class="recipe-card">
-            <img src="images/Lunch/lunch4.jpg" alt="Egg Avocado Salad">
-            <h2>Egg Avocado Salad</h2>
-            <p>Fuel your midday routine with this nutrient-packed egg avocado salad, perfect for a light and refreshing lunch.</p>
-             <a href="#recipe-avocado-salad">View Recipe</a>
-        </div>
-    </div>
-    </section>
-    <div id="recipe-grilled-cheese" class="recipe-modal">
-        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Lunch</p><h2>Grilled Cheese Salad</h2><h3>Ingredients</h3><p>4 bread slices, 4 cheese slices, butter, lettuce, tomato, cucumber, lemon dressing.</p><h3>Method</h3><p>Make grilled cheese in a buttered pan until golden. Slice and serve over the salad vegetables with lemon dressing.</p></div>
-    </div>
-    <div id="recipe-sandwiches" class="recipe-modal">
-        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Lunch</p><h2>Mini Sandwiches</h2><h3>Ingredients</h3><p>Slider rolls, sliced turkey, cheese, lettuce, tomato, mayonnaise.</p><h3>Method</h3><p>Spread mayonnaise on the rolls. Layer the turkey, cheese, lettuce, and tomato. Cut into small sandwiches and serve.</p></div>
-    </div>
-    <div id="recipe-pasta-salad" class="recipe-modal">
-        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Lunch</p><h2>Creamy Pasta Salad</h2><h3>Ingredients</h3><p>250 g pasta, mayonnaise, yogurt, cucumber, tomato, corn, salt and pepper.</p><h3>Method</h3><p>Cook and cool the pasta. Mix the dressing with the vegetables, fold in the pasta, and chill for 30 minutes.</p></div>
-    </div>
-    <div id="recipe-avocado-salad" class="recipe-modal">
-        <div class="recipe-modal-content"><a class="recipe-close" href="#" aria-label="Close recipe">&times;</a><p>Lunch</p><h2>Egg Avocado Salad</h2><h3>Ingredients</h3><p>2 boiled eggs, 1 avocado, lemon juice, yogurt, salt and pepper.</p><h3>Method</h3><p>Chop the eggs and avocado. Fold together with lemon juice and yogurt. Season and serve on toast or salad leaves.</p></div>
-    </div>
-    <footer>
-        <div>
-            <p>&copy; 2026 Recipe Corner Food Recipes. All rights reserved.</p>
-        </div>
-    </footer>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-mark">RC</div>
+        <a href="index.html" class="logo-text">Recipes Corner</a>
+      </div>
+      <input class="mobile-menu-toggle" type="checkbox" id="mobile-menu">
+      <label class="mobile-menu-button" for="mobile-menu"><span>Menu</span></label>
+      <div class="nav-group">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="recipes.html">All Recipes</a>
+          <a href="categories.html">Categories</a>
+          <a href="meal-planner.html">Meal Planner</a>
+          <a href="shopping-list.html">Shopping List</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="sub-nav" aria-label="Category navigation">
+          <a href="breakfast.html">Breakfast</a>
+          <a href="lunch.html">Lunch</a>
+          <a href="dinner.html">Dinner</a>
+          <a href="desserts.html">Desserts</a>
+          <a href="quick-easy.html">Quick &amp; Easy</a>
+          <a href="healthy-diet.html">Healthy Diet</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(90deg, rgba(30,32,34,0.70), rgba(30,32,34,0.25)), url('images/Lunch/lunch-banner.jpeg');">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="section-tag">Midday meals</span>
+          <h1>Lunch ideas that fill you up.</h1>
+          <p>Fresh, nourishing options for workdays, afternoons, and quick family lunches.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch1.jpg" alt="Grilled Cheese and Salad">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★☆</span></div>
+              <h3>Grilled Cheese &amp; Salad</h3>
+              <p>Warm, comforting, and balanced with crisp greens and vegetables.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch2.jpg" alt="Mini Sandwiches">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★★</span></div>
+              <h3>Mini Sandwiches</h3>
+              <p>Small but satisfying bites packed with flavor and crunch.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch3.jpg" alt="Creamy Pasta Salad">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★☆</span></div>
+              <h3>Creamy Pasta Salad</h3>
+              <p>Cool, creamy, and colorful for lunchboxes and easy meal prep.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <img src="images/Lunch/lunch4.jpg" alt="Egg Avocado Salad">
+            <div class="recipe-body">
+              <div class="recipe-meta"><span class="category-tag">Lunch</span><span class="rating">★★★★★</span></div>
+              <h3>Egg Avocado Salad</h3>
+              <p>Protein-rich and fresh with creamy avocado and a bright lemon lift.</p>
+              <a class="btn btn-secondary" href="recipe-detail.html">View recipe</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Recipe Corner Food Recipes.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
+
